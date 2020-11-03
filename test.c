@@ -123,12 +123,6 @@ void* send_email(void* data)
     sprintf(sv_Toeic,"Toeic:%d \n", sv.Toeic);
     sprintf(sv_Credits, "So tin chi qua:%d \n", sv.Credits);
     sprintf(sv_Tuition, "No hoc phi:%d d\n", sv.Tuition);
-    /*strcat(body,sv_ThreadID);
-    strcat(body, sv_Name);
-    strcat(body, sv_GPA);
-    strcat(body, sv_Toeic);
-    strcat(body, sv_Credits);
-    strcat(body, sv_Tuition);*/
     char tempFile[100];     // name of tempfile.
 
     strcpy(tempFile,tempnam("/tmp","sendmail")); // generate temp file name.
